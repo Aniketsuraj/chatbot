@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2025-05-19T23:06:49.096139",
+    "teacher_id": "8933",
+    "question": "hello",
+    "query": null,
+    "response": "Hi there! It's lovely to hear from you. What can I do for you today? 😊",
+    "sql_result": null,
+    "tag": "general_chat",
+    "error": null
+  },
+  {
+    "timestamp": "2025-05-19T23:08:23.185395",
+    "teacher_id": "8933",
+    "question": "give me the overall performance summary of all the classes",
+    "query": "SELECT  DISTINCT s.section_name, s.section_CR, s.section_LI FROM section s WHERE s.teacher_id = 8933 ORDER BY s.section_CR DESC",
+    "response": "Answer:\nHere's a look at how your classes are doing overall. The class 8c is showing really strong progress, with a score of 47.89. They're also performing well, with a score of 68.67. Class 8a is also doing well, with a progress score of 46.53 and a performance score of 66.74. However, class 8e seems to be struggling a bit more, with a progress score of 35.98 and a performance score of 76.01. It looks like they might need some extra support.\n\nRecommendation:\nIt seems like class 8e could benefit from some targeted review of the topics covered. Perhaps revisiting foundational concepts or offering small group instruction could help them catch up. Also, consider looking at the types of activities and assessments used in class 8e to see if adjustments could improve student engagement and understanding.",
+    "sql_result": [
+      {
+        "section_name": "class 8c",
+        "section_CR": 47.89,
+        "section_LI": 68.67
+      },
+      {
+        "section_name": "class 8a",
+        "section_CR": 46.53,
+        "section_LI": 66.74
+      },
+      {
+        "section_name": "class 8e",
+        "section_CR": 35.98,
+        "section_LI": 76.01
+      }
+    ],
+    "tag": "query_data",
+    "error": null
+  },
+  {
+    "timestamp": "2025-05-19T23:08:43.956668",
+    "teacher_id": "8933",
+    "question": "give me the overall performance summary of all the classes",
+    "query": null,
+    "response": "Follow-Up Questions:\n1. What’s the difference in progress between class 8a and class 8e?\n2. How many students are in class 8c?\n3. Can you tell me which class has the highest score in performance?",
+    "sql_result": null,
+    "tag": "follow_up_questions",
+    "error": null
+  }
+]
